@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="qualquerlugar" method="post">
+        Nome: <input type="text" size="80" name="nome"/><br/>
+        Senha: <input type="password" name="senha" size="20" maxlength="20"/><br/> 
+        Sistema Operacional: <input type="checkbox" name="sistemaoperacional" value="windows7"/>Windows 7 <input type="checkbox" name="sistemaoperacional" value="windows10"/>Windows 10 <input type="checkbox" name="sistemaoperacional" value="linux"/>Linux <input type="checkbox" name="sistemaoperacional" value="mac"/>Mac OS<br/>
+        Processador: <input type="radio" name="processador" value="intel"/>Intel <input type="radio" name="processador" value="amd"/>AMD <input type="radio" name="processador" value="cyrix"/>Cyrex<br/>
+        Profissão: <select name="profissao" size="1">
+            <option value="analistadesistemas">Analista de Sistemas</option>
+            <option value="analistadesuporte">Analista de Suporte</option>
+        </select><br/>
+        Comentários:<textarea rows="10" cols="50" name="mensagem"></textarea><br/>
+        <input type="submit" value="Enviar Dados"/>
+        <input type="reset" value="Limpar Dados"/>
+    </form>
+    
+</body>
+</html>
